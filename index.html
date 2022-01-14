@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 13 Assignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Mono:wght@500&family=Lobster&family=Orbitron:wght@900&family=Pacifico&family=Space+Mono:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.popper.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+
+    <!-- Digital Clock -->
+
+
+    <div class="main_wrapper">
+        <div class="container">
+            <div id="wrapper" class="col-md-5 m-auto">
+                <div class="content">
+                    <div class="battery">
+                        <div class="charge"></div>
+                    </div>
+                    <h1 class="clock">
+                        <span id="hoursSpan"></span><span id="minutesSpan"></span><span id="secondsSpan"></span> <span id="ampm"></span>
+                    </h1>
+    
+                    <h4>
+                        <span id="date"></span>
+                        <span id="day"></span>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- counter with loader -->
+
+
+    <div class="mainLoader">
+
+        <div class="mainCounterSection">
+            <div class="container">
+                <h3 style="color: tomato;font-size: 40px;text-align: center;">Counter With Loader</h3>
+    
+                <div style="width: 600px;margin: auto;" class="input-group pt-3">
+                    <input type="number" class="form-control" placeholder="Input Counter Value" id="counterVal">
+                    <input id="start" type="submit" value="START WATCH" class="btn btn-success">
+                    <input id="stop" type="submit" value="STOP WATCH" class="btn btn-danger">
+                </div>
+    
+                <h4 style="font-size: 60px;margin-bottom: 2rem; margin-top: 2rem;"><span style="transition: all 0.3s;" id="decrementVal">0</span></h4>
+    
+                <div class="loaderWrap">
+                    <div id="complete"></div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="container">
+            <h3 style="color: tomato;font-size: 40px;padding-top: 30px;">Loading . . .</h3>
+
+            <h4 style="font-size: 50px;"><span id="counter">0</span><span style="color: tomato;">%</span></h4>
+
+            <div class="loaderWrapper">
+                <div id="loaderComplete"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- basic to do app -->
+
+
+    <div class="mainSection">
+        <div style="padding: 70px 30px; width: 600px;margin: auto;" class="container">
+            <h2 style="font-size:60px;margin-bottom:30px;" class="text-center">Basic TO-DO App</h2>
+    
+            <div class="input-group">
+                <input id="todoVal" type="text" class="form-control" placeholder="Type & Add">
+                <input id="addVal" type="submit" class="btn btn-success" value="ADD">
+                <input id="clearVal" type="submit" class="btn btn-danger" value="CLEAR ALL">
+            </div>
+
+            <ul id="listWrappers" class="list-group mt-5"></ul>
+        </div>
+    </div>
+
+
+    <!-- Subject Marks app with notification color -->
+
+
+    <div class="mainWrapper4">
+        <div class="container">
+  
+          <h1 style="font-size: 60px;text-align: center;margin: 0%;margin-top: 60px;">Subject Marks app with notification color</h1>
+  
+          <div class="form_wrapper">
+  
+              <div class="formBlock">
+                  <input class="form-control mb-3" type="text" id="user" placeholder="Enter Your Name" />
+                  <input class="form-control mb-3" type="text" id="className" placeholder="Enter Your class" />
+                  <input class="form-control mb-3" type="number" id="bangla" placeholder="Enter Your Marks Of Bangla" />
+                  <input type="number" id="english" class="form-control mb-3" placeholder="Enter Your Marks Of English" />
+                  <input type="number" id="math" placeholder="Enter Your Marks Of Math" class="form-control mb-3" />
+                  <input type="number" id="science" placeholder="Enter Your Marks Of Science" class="form-control mb-3" />
+                  <input type="number" id="society" placeholder="Enter Your Marks Of Society" class="form-control mb-3"/>
+                  <input type="number" id="religion" class="form-control mb-3" placeholder="Enter Your Marks Of Religion"/>
+                  
+                  <input type="submit" id="getResult" value="Get Results" class="btn btn-success w-100" />
+              </div>
+                
+              <div class="resultBlock">
+  
+                  <table>
+  
+                      <thead>
+                          <tr>
+                              <th>Name</th>
+                              <th>Class</th>
+                              <td>Subject</td>
+                              <th>Marks</th>
+                              <th>GPA</th>
+                              <th>Grade</th>
+                          </tr>
+                      </thead>
+  
+                      <tbody id="body">
+                          
+                      </tbody>
+  
+                  </table>
+  
+                  <div id="notification">
+  
+                  </div>
+  
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <script src="./js/functions.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/load.js"></script>
+</body>
+</html>
