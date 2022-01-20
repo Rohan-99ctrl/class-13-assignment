@@ -99,12 +99,20 @@ let createList;
 
 addVal.addEventListener('click', function(){
 
-    createList = document.createElement('li');
-    createList.className = 'list-group-item';
-    createList.innerText = todoVal.value;
-    listWrapper.appendChild(createList);
+    if(todoVal.value == ''){
+        alert('All fields are required!');
+    }else{
 
-    todoVal.value = '';
+        createList = document.createElement('li');
+        createList.className = 'list-group-item';
+        createList.innerText = todoVal.value;
+
+        listWrapper.appendChild(createList);
+        
+        todoVal.value = '';
+
+    }
+
 
 });
 
